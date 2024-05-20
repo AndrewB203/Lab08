@@ -1,7 +1,7 @@
 CMakeFiles/formatter.dir/formatter.cpp.o: \
- /home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp \
+ /home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp \
  /usr/include/stdc-predef.h \
- /home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.h \
+ /home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

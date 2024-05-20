@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab03
+CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab04
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab03/build
+CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab04/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab03/build/CMakeFiles /home/andrew/AndrewB203/workspacenew/lab03/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles /home/andrew/AndrewB203/workspacenew/lab04/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab03/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -174,32 +174,6 @@ print/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/build
 .PHONY : print/fast
 
-#=============================================================================
-# Target rules for targets named hello_world
-
-# Build rule for target.
-hello_world: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
-.PHONY : hello_world
-
-# fast build rule for target.
-hello_world/fast:
-	$(MAKE) $(MAKESILENT) -f hello_world_application/CMakeFiles/hello_world.dir/build.make hello_world_application/CMakeFiles/hello_world.dir/build
-.PHONY : hello_world/fast
-
-#=============================================================================
-# Target rules for targets named formatter_ex_lib
-
-# Build rule for target.
-formatter_ex_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_lib
-.PHONY : formatter_ex_lib
-
-# fast build rule for target.
-formatter_ex_lib/fast:
-	$(MAKE) $(MAKESILENT) -f formatter_ex_lib/CMakeFiles/formatter_ex_lib.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex_lib.dir/build
-.PHONY : formatter_ex_lib/fast
-
 sources/print.o: sources/print.cpp.o
 .PHONY : sources/print.o
 
@@ -236,8 +210,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... formatter_ex_lib"
-	@echo "... hello_world"
 	@echo "... print"
 	@echo "... sources/print.o"
 	@echo "... sources/print.i"

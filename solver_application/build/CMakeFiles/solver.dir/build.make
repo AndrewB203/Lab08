@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab03/solver_application
+CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab04/solver_application
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build
+CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab04/solver_application/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/solver.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/solver.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/solver.dir/flags.make
 
-CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o: CMakeFiles/solver.dir/flags.make
-CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o: /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp
-CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o: CMakeFiles/solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/AndrewB203/workspacenew/lab03/solver_application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o -MF CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o.d -o CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o -c /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp
+CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o: CMakeFiles/solver.dir/flags.make
+CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o: /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp
+CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o: CMakeFiles/solver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/AndrewB203/workspacenew/lab04/solver_application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o -MF CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o.d -o CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o -c /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp
 
-CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp > CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.i
+CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp > CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.i
 
-CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp -o CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.s
+CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp -o CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.s
 
 # Object files for target solver
 solver_OBJECTS = \
-"CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o"
+"CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o"
 
 # External object files for target solver
 solver_EXTERNAL_OBJECTS =
 
-libsolver.a: CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp.o
+libsolver.a: CMakeFiles/solver.dir/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp.o
 libsolver.a: CMakeFiles/solver.dir/build.make
 libsolver.a: CMakeFiles/solver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/AndrewB203/workspacenew/lab03/solver_application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsolver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/AndrewB203/workspacenew/lab04/solver_application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsolver.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/solver.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solver.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/solver.dir/clean:
 .PHONY : CMakeFiles/solver.dir/clean
 
 CMakeFiles/solver.dir/depend:
-	cd /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/AndrewB203/workspacenew/lab03/solver_application /home/andrew/AndrewB203/workspacenew/lab03/solver_application /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build/CMakeFiles/solver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andrew/AndrewB203/workspacenew/lab04/solver_application/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/AndrewB203/workspacenew/lab04/solver_application /home/andrew/AndrewB203/workspacenew/lab04/solver_application /home/andrew/AndrewB203/workspacenew/lab04/solver_application/build /home/andrew/AndrewB203/workspacenew/lab04/solver_application/build /home/andrew/AndrewB203/workspacenew/lab04/solver_application/build/CMakeFiles/solver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/solver.dir/depend
 

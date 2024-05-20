@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib
+CMAKE_SOURCE_DIR = /home/andrew/AndrewB203/workspacenew/lab04/formatter_ex_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build
+CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/lab04/formatter_ex_lib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build/CMakeFiles /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab04/formatter_ex_lib/build/CMakeFiles /home/andrew/AndrewB203/workspacenew/lab04/formatter_ex_lib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/lab04/formatter_ex_lib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -166,29 +166,29 @@ formatter_ex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter_ex.dir/build.make CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
 .PHONY : formatter_ex.cpp.s
 
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.o: home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.o
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.o
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.o: home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.o
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.o
 
 # target to build an object file
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.o
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.o
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.o
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.o
 
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.i: home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.i
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.i
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.i: home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.i
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.i
 
 # target to preprocess a source file
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.i
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.i
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.i
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.i
 
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.s: home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.s
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.s
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.s: home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.s
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.s
 
 # target to generate assembly for a file
-home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.s
-.PHONY : home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.cpp.s
+home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.s
+.PHONY : home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.cpp.s
 
 # Help Target
 help:
@@ -203,9 +203,9 @@ help:
 	@echo "... formatter_ex.o"
 	@echo "... formatter_ex.i"
 	@echo "... formatter_ex.s"
-	@echo "... home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.o"
-	@echo "... home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.i"
-	@echo "... home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/formatter.s"
+	@echo "... home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.o"
+	@echo "... home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.i"
+	@echo "... home/andrew/AndrewB203/workspacenew/lab04/formatter_lib/formatter.s"
 .PHONY : help
 
 

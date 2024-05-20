@@ -1,5 +1,5 @@
 CMakeFiles/equation.dir/equation.cpp.o: \
- /home/andrew/AndrewB203/workspacenew/lab03/solver_application/equation.cpp \
+ /home/andrew/AndrewB203/workspacenew/lab04/solver_application/equation.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -153,5 +153,5 @@ CMakeFiles/equation.dir/equation.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/andrew/AndrewB203/workspacenew/lab03/solver_application/../formatter_ex_lib/formatter_ex.h \
- /home/andrew/AndrewB203/workspacenew/lab03/solver_application/../solver_lib/solver.h
+ /home/andrew/AndrewB203/workspacenew/lab04/solver_application/../formatter_ex_lib/formatter_ex.h \
+ /home/andrew/AndrewB203/workspacenew/lab04/solver_application/../solver_lib/solver.h

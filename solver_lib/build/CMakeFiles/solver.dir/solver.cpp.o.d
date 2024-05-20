@@ -1,7 +1,7 @@
 CMakeFiles/solver.dir/solver.cpp.o: \
- /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.cpp \
+ /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.cpp \
  /usr/include/stdc-predef.h \
- /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/solver.h \
+ /home/andrew/AndrewB203/workspacenew/lab04/solver_lib/solver.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

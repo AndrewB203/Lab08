@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/AndrewB203/workspacenew/lab03/hello_world_application
+# Install script for directory: /home/andrew/AndrewB203/workspacenew/lab04/hello_world_application
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andrew/AndrewB203/workspacenew/lab03/hello_world_application/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andrew/AndrewB203/workspacenew/lab04/hello_world_application/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
