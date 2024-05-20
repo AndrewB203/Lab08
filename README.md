@@ -154,7 +154,6 @@ $ cd reports/lab${LAB_NUMBER}
 $ edit REPORT.md
 $ gist REPORT.md
 ```
-
 ## Homework
 
 Представьте, что вы стажер в компании "Formatter Inc.".
@@ -165,19 +164,73 @@ $ gist REPORT.md
 Создайте `CMakeList.txt` в директории [formatter_lib](formatter_lib),
 с помощью которого можно будет собирать статическую библиотеку *formatter*.
 
+```sh
+andrew@Ubuntu24Laby:~$ cd AndrewB203/workspacenew/lab03
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd formatter_lib/
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_lib$ cmake -H. -B build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/build
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_lib$ cmake --build build
+Consolidate compiler generated dependencies of target formatter
+[100%] Built target formatter
+```
 ### Задание 2
 У компании "Formatter Inc." есть перспективная библиотека,
 которая является расширением предыдущей библиотеки. Т.к. вы уже овладели
 навыком созданием `CMakeList.txt` для статической библиотеки *formatter*, ваш 
 руководитель поручает заняться созданием `CMakeList.txt` для библиотеки 
 *formatter_ex*, которая в свою очередь использует библиотеку *formatter*.
-
+```sh
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd formatter_ex_lib/
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_ex_lib$ cmake -H. -B build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_ex_lib$ cmake --build build
+Consolidate compiler generated dependencies of target formatter
+[ 50%] Built target formatter
+Consolidate compiler generated dependencies of target formatter_ex
+[100%] Built target formatter_ex
+```
 ### Задание 3
 Конечно же ваша компания предоставляет примеры использования своих библиотек.
 Чтобы продемонстрировать как работать с библиотекой *formatter_ex*,
 вам необходимо создать два `CMakeList.txt` для двух простых приложений:
 * *hello_world*, которое использует библиотеку *formatter_ex*;
 * *solver*, приложение которое испольует статические библиотеки *formatter_ex* и *solver_lib*.
+
+```sh
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_application$ cmake -H. -B build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_application$ cmake --build build
+Consolidate compiler generated dependencies of target formatter
+[ 25%] Built target formatter
+Consolidate compiler generated dependencies of target formatter_ex
+[ 50%] Built target formatter_ex
+Consolidate compiler generated dependencies of target solver
+[ 75%] Built target solver
+Consolidate compiler generated dependencies of target equation
+[100%] Built target equation
+
+```
+```sh
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd solver_lib
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_lib$ cmake -H. -B build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/build
+andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_lib$ cmake --build build
+Consolidate compiler generated dependencies of target solver
+[ 50%] Building CXX object CMakeFiles/solver.dir/solver.cpp.o
+[100%] Linking CXX static library libsolver.a
+[100%] Built target solver
+```
+
+
+
 
 **Удачной стажировки!**
 
