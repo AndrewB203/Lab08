@@ -21,4 +21,4 @@ jobs:
 
     - name: Build
       run: |
-        cmake --build ${{github.workspace}}/build
+        cmake --build ${{github.workspacenew}}/build
