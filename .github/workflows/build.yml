@@ -21,7 +21,7 @@ jobs:
 
     - name: Configure CMake
       run: |
-        cmake -B ${{github.workspacenew}}/build ${{github.workspacenew}}
+        cmake -B ${{github.workspacenew}}/build 
 
     - name: Build
       run: |
