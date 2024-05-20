@@ -18,7 +18,3 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y cmake make g++
-
-    - name: Build
-      run: |
-        cmake --build ${{github.workspacenew}}build
