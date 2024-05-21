@@ -1,7 +1,7 @@
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/print.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/edit_cache.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/rebuild_cache.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/list_install_components.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/install.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/install/local.dir
-/home/andrew/AndrewB203/workspacenew/lab04/build/CMakeFiles/install/strip.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/print.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/edit_cache.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/rebuild_cache.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/list_install_components.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/install.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/install/local.dir
+/home/andrew/AndrewB203/workspacenew/lab06/build/CMakeFiles/install/strip.dir
