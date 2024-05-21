@@ -18,3 +18,13 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y cmake make g++
+
+    - name: Configure CMake
+      run: |
+        rm -rf ${{github.workspace}}/build
+        mkdir ${{github.workspace}}/build
+        cmake -B ${{github.workspace}}/build -S ${{github.workspace}}
+
+    - name: Build
+      run: |
+        cmake --build ${{github.workspace}}/build
