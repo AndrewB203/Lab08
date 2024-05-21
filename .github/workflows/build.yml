@@ -21,10 +21,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        if ("${{ matrix.os }}" == "ubuntu-latest" ); then
+        if ["${{ matrix.os }}" == "ubuntu-latest"] ; then
           sudo apt-get update
           sudo apt-get install -y cmake make g++
-        elif ( "${{ matrix.os }}" == "macos-latest" ); then
+        elif [ "${{ matrix.os }}" == "macos-latest" ]; then
           brew install cmake
         fi
 
