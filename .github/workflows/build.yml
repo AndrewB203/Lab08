@@ -39,7 +39,7 @@ jobs:
         cmake --build ${{github.workspace}}/build
 
     - name: Package
-      if: startsWith(github.ref, 'refs/tags/')
+     #if: startsWith(github.ref, 'refs/tags/')
       run: |
         cpack -G DEB
         cpack -G RPM
@@ -47,7 +47,7 @@ jobs:
         cpack -G DragNDrop
 
     - name: Upload artifacts
-      if: startsWith(github.ref, 'refs/tags/')
+      #if: startsWith(github.ref, 'refs/tags/')
       uses: actions/upload-artifact@v2
       with:
         name: solver-packages
