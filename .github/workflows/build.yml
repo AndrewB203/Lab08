@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -11,8 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Remove old build cache
+        run: |
+          rm -rf build/*
+          mkdir -p build/artifacts
+
       - name: Configure CMake
-        run: cmake -H. -B build -DCMAKE_INSTALL_PREFIX=build/artifacts
+        run: cmake -H. -B build -DCMAKE_INSTALL_PREFIX=${{github.workspace}}/build/artifacts
 
       - name: Build
         run: cmake --build build
