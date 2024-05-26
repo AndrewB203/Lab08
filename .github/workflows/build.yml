@@ -12,11 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Remove old build cache
-        run: |
-          rm -rf build/*
-          mkdir -p build/artifacts
-
       - name: Configure CMake
         run: cmake -H. -B build -DCMAKE_INSTALL_PREFIX=${{github.workspace}}/build/artifacts
 
@@ -26,8 +21,13 @@ jobs:
       - name: Install
         run: cmake --build build --target install
 
+      - name: Create Artifact Archive
+        run: |
+          cd build/artifacts
+          tar czvf ../my-artifacts.tar.gz .
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: my-artifacts
-          path: build/artifacts/
+          path: build/my-artifacts.tar.gz
