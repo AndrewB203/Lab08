@@ -31,7 +31,7 @@ jobs:
 
     - name: Run the Docker container and save results
       run: |
-        docker run -v ${{ github.workspace }}/shared:/shared user/repo:latest
+        docker run -v ${{ github.workspace }}/shared:/shared andrewb203/lab08:latest
 
     - name: Check shared folder content
       run: |
