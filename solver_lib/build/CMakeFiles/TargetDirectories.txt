@@ -1,3 +1,0 @@
-/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/build/CMakeFiles/solver.dir
-/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/build/CMakeFiles/edit_cache.dir
-/home/andrew/AndrewB203/workspacenew/lab04/solver_lib/build/CMakeFiles/rebuild_cache.dir

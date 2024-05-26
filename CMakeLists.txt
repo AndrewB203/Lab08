@@ -3,18 +3,15 @@ cmake_minimum_required(VERSION 3.4)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project(solver_app)
-set(SOLVER_VERSION_MAJOR 0)
-set(SOLVER_VERSION_MINOR 1)
-set(SOLVER_VERSION_PATCH 0)
-set(SOLVER_VERSION_TWEAK 0)
-set(SOLVER_VERSION ${SOLVER_VERSION_MAJOR}.${SOLVER_VERSION_MINOR}.${SOLVER_VERSION_PATCH}.${SOLVER_VERSION_TWEAK})
-set(SOLVER_VERSION_STRING "v${SOLVER_VERSION}")
-
-
 option(BUILD_EXAMPLES "Build examples" OFF)
+option(BUILD_TESTS "Build tests" OFF)
 
 project(print)
+set(PRINT_VERSION_MAJOR 0)
+set(PRINT_VERSION_MINOR 1)
+set(PRINT_VERSION_PATCH 0)
+set(PRINT_VERSION_TWEAK 0)
+set(PRINT_VERSION\${PRINT_VERSION_MAJOR}.${PRINT_VERSION_MINOR}.${PRINT_VERSION_PATCH}.${PRINT_VERSION_TWEAK})
 set(PRINT_VERSION_STRING "v${PRINT_VERSION}")
 
 add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp)
@@ -44,3 +41,17 @@ install(TARGETS print
 
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ DESTINATION include)
 install(EXPORT print-config DESTINATION cmake)
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(third-party/gtest)
+    file(GLOB print_TEST_SOURCES "tests/*.cpp")
+    foreach(TEST_SOURCE ${print_TEST_SOURCES})
+        add_executable(check ${TEST_SOURCE})
+        target_link_libraries(check gtest_main print)
+        add_test(NAME check COMMAND check)
+    endforeach(TEST_SOURCE ${print_TEST_SOURCES})
+endif()
+
+
+include(CPackConfig.cmake)
