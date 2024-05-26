@@ -17,5 +17,9 @@ jobs:
           cmake -H. -B build -DCMAKE_INSTALL_PREFIX=_install
           cmake --build  build
           cmake --build  build --target install
-
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifacts
+          path: _install/
 
