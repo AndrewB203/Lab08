@@ -9,17 +9,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-      - run: |
-          rm -rf build/*
-          cmake -H. -B build -DCMAKE_INSTALL_PREFIX=_install
-          cmake --build  build
-          cmake --build  build --target install
+
+      - name: Configure CMake
+        run: cmake -H. -B build -DCMAKE_INSTALL_PREFIX=build/artifacts
+
+      - name: Build
+        run: cmake --build build
+
+      - name: Install
+        run: cmake --build build --target install
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: my-artifacts
           path: build/artifacts/
-
