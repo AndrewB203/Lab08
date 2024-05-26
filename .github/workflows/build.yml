@@ -16,7 +16,6 @@ jobs:
 
       - name: run cmake
         run: |
-          pwd
           cmake -H. -B build -DCMAKE_INSTALL_PREFIX=_install
           cmake --build  build
           cmake --build  build --target install
