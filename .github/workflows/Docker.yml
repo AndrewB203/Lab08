@@ -27,13 +27,11 @@ jobs:
       with:
         context: .
         push: true
-        tags: user/repo:latest
+        tags: andrewb203/lab08:latest
 
     - name: Run the Docker container and save results
       run: |
         docker run -v ${{ github.workspace }}/shared:/shared user/repo:latest
-        # Замените user/repo на ваше имя пользователя Docker Hub и репозиторий
-        # Добавьте здесь команды для выполнения задачи и сохранения результатов в /shared
 
     - name: Check shared folder content
       run: |
