@@ -18,4 +18,4 @@ VOLUME /shared
 
 WORKDIR _install/bin
 
-ENTRYPOINT ./example1
+ENTRYPOINT sh -c "./example1 > /shared/output.txt"
