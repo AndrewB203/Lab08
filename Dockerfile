@@ -14,6 +14,12 @@ ENV LOG_PATH /home/logs/log.txt
 
 VOLUME /home/logs
 
+VOLUME /shared
+
+RUN touch /shared/test.file
+
+RUN ls /shared
+
 WORKDIR _install/bin
 
 ENTRYPOINT ./example1
