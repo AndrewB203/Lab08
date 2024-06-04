@@ -16,10 +16,6 @@ VOLUME /home/logs
 
 VOLUME /shared
 
-RUN touch /shared/test.file
-
-RUN ls /shared
-
 WORKDIR _install/bin
 
 ENTRYPOINT ./example1
